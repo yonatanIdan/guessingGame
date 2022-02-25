@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./javaScript.js" defer></script>
+    <link rel="icon" href="./image/logo.png" type=”image/png” sizes="16x16">
+    <title>Number Chooser</title>
+  </head>
+  <body id="body" class="body">
+    <div class="darkMode">
+      <!-- <button onclick="darkMode()" class="button" id="darkMode">dark-mode</button> -->
+      <input type="radio" id="styleMode" name="style_mode" onclick="darkMode(true)" value="Light Mode" checked>Light Mode</input><br/>
+      <input type="radio" id="styleMode" name="style_mode" onclick="darkMode(false)" value="Dark Mode">Dark Mode</input>
+    </div>
+    <div id="nameForm">
+      <form id="getName" onsubmit="getName(event)">
+        <label class="label" for="fname">Name:</label>
+        <input type="text" name="name" id="name" />
+        <p id="errorName">* Please enter your first name</p>
+        <input class="button" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="startGame" id="startGame">
+      <h3 id="helloName"></h3>
+      <button id="startGameBtn" class="button" onclick="startGame()">Start Game</button>
+    </div>
+    <div id="game" class="game">
+      <div id="gameTitle">Random Number</div>
+      <div>
+        <form onsubmit="game(event)">
+          <input type="number" name="guess" id="guess" value="1" min="1" max="10"/>
+          <input type="submit" class="button" value="check" />
+        </form>
+        <div id="guessStatus"></div>
+      </div>
+    </div>
+    <div id="score" class="score">
+      <h3 class="scoreTitle">Score</h3>
+      <table>
+        <tr>
+          <th>Win</th>
+          <th>Lose</th>
+        </tr>
+          <td id="win">0</td>
+          <td id="lose">0</td>
+      </table>
+    </div>
+    <div id="endGame">
+      <strong id="message" ></strong>
+      <button id="startGameBtn" class="button" onclick="startGame()">Start Again</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Dongle', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.body {
+    background: no-repeat linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.8914916308320203) 21%, rgba(0, 212, 255, 1) 100%);
+    text-align: center;
+    height: 100vh;
+}
+
+.darkMode {
+    display: block;
+    position: absolute;
+    margin: 20px 30px 0 0;
+    right: 0;
+}
+
+#gameTitle {
+    margin: 10px 0;
+    font-size: 40px;
+}
+
+#errorName {
+    margin: 0;
+    font-size: 80%;
+    color: red;
+    display: none;
+}
+
+.button {
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    background-color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.button:hover {
+    border: 2px solid #00dd00;
+    background-color: #00b900;
+    cursor: pointer;
+}
+
+#nameForm {
+    background-color: #FFFFFF;
+    width: 30%;
+    display: inline-block;
+    border: 3px solid #6d6d6d;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #5f5f5f;
+    margin-top: 15%;
+}
+
+#getName {
+    display: grid;
+    padding: 15px;
+}
+
+#name {
+    background-color: rgba(250, 235, 215, 0) !important;
+    font-size: 30px;
+    border: none;
+    height: 30px;
+    border-bottom: 2px solid rgb(63, 63, 63);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.label {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+}
+
+.startGame {
+    display: none;
+}
+
+.game {
+    display: none;
+}
+
+#message {
+    font-size: 45px;
+}
+
+.score {
+    display: none;
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    width: 30%;
+    border: 3px solid #6d6d6d;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #5f5f5f;
+}
+
+.score:hover {
+    box-shadow: 0 0 30px #52f9ff;
+}
+
+#guess {
+    border-radius: 6px;
+    background: rgb(253 255 252 / 0%);
+    border: 2px solid #6d6d6d;
+    text-align: center;
+    margin-right: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#endGame {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 21.6%;
+    width: 50% !important;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffffd7;
+    min-height: 150px;
+    border: 3px solid #6d6d6d;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 15px #5f5f5f;
+}
+
+#guessStatus {
+    margin-top: 15px;
+}
+
+.scoreTitle {
+    margin: 10px 0 0 0;
+}
+
+.dark-mode {
+    background: no-repeat linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(11, 11, 71, 0.891) 21%, rgb(0, 60, 71) 100%);
+    color: white;
+}
+
+.dark-mode-card {
+    background-color: #525252 !important;
+}
+
+.dark-mode-card:hover {
+    box-shadow: 0 0 30px #fff12c;
+}
+
+.dark-mode-button {
+    background-color: rgb(0, 128, 240);
+    color: white;
+}
+
+.dark-mode-button:hover {
+    border: 2px solid rgb(0, 102, 192);
+    background-color: rgb(0, 55, 104);
+}
